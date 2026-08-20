@@ -1,0 +1,153 @@
+/* Modern Reset and Base Styles */
+body {
+  margin: 0;
+  /* Uses the best available font on the user's specific computer */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f3f4f6; /* Softer, cooler light gray */
+  color: #1f2937; /* Dark slate text (easier on the eyes than pure black) */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4f46e5; /* A modern, vibrant indigo brand color */
+  letter-spacing: -0.025em;
+}
+
+.navbar a {
+  color: #4b5563;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #4f46e5; /* Links highlight indigo on hover */
+}
+
+/* Main Content Container */
+.content {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Modern Table Styling */
+.data-table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden; /* Clips the corners so they stay round */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.data-table th, .data-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.data-table th {
+  background-color: #f8fafc; /* Very light blue/gray header */
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none; /* Removes the double-border look at the bottom */
+}
+
+.data-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f8fafc; /* Subtle highlight when mouse hovers over a row */
+}
+
+/* Modern Form Styling */
+.form-container {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  max-width: 450px;
+  margin: 0 auto; /* Centers the form on the page */
+}
+
+.form-container h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #111827;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  color: #1f2937;
+}
+
+/* The glowing "Focus Ring" when a user clicks into a text box */
+.input-group input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15); 
+}
+
+/* Modern Button Styling */
+button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%; /* Makes the button fill the form */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #4338ca; /* Slightly darker indigo on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Satisfying "click" animation pressing the button inward */
+}
